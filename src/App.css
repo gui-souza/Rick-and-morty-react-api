@@ -1,38 +1,101 @@
-.App {
+span {
+  font-size: 0.85em;
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  background-color: white;
+}
+
+/*Bloco CardList*/
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-list__card {
+  display: flex;
+  text-align: left;
+  padding: 50px;
+  margin: 7px;
+  background:rgb(68, 68, 78);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-list__card__info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.card-list__card__info__p {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-list__card__info__span {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-list__card__img{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  border-radius: 50%;
 }
+
+.card-list__info__p {
+  font-size: 1.5em;
+  margin: 0px;
+}
+
+/* Bloco Info */
+.info {
+  background-color: #ffffff;
+}
+
+.info__body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  align-items: center;
+  padding: 0 350px;
+}
+
+.info__body__img {
+  border-radius: 50%;
+  width: 150%;
+}
+
+.info__details__p {
+  font-size: 1.5em;
+  margin: 0px;
+}
+
+.info__body__button-footer {
+  text-align: start;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.info__body__button-footer__a {
+  text-decoration: none;
+  background-color:cornflowerblue;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+}
+
